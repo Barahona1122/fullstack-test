@@ -1,0 +1,16 @@
+@media (min-width: 148px) and (max-width:600px) {
+	.cardProduct {
+		width: 100%!important;
+	}
+}
+
+#success-message{
+	position: fixed;
+    top: 10%;
+    right: 13%;
+    z-index: 1;
+    display: none;
+}
+
+
+
