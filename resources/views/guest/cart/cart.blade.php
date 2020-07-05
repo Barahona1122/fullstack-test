@@ -1,5 +1,7 @@
 @extends('guest.layout.app')
 
 @section('content')
-    <cart-component></cart-component>
+	<div id="app">
+		<cart-component></cart-component>
+	</div>
 @endsection

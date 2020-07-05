@@ -1,5 +1,7 @@
 @extends('guest.layout.app')
 
 @section('content')
-    <details-component slug="{{$slug}}"></details-component>
+	<div id="app">
+	    <details-component slug="{{$slug}}"></details-component>
+	</div>
 @endsection

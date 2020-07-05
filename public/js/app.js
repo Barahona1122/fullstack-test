@@ -3222,6 +3222,23 @@ __webpack_require__.r(__webpack_exports__);
 //
 //
 //
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
 /* harmony default export */ __webpack_exports__["default"] = ({
   data: function data() {
     return {
@@ -41189,42 +41206,70 @@ var render = function() {
               }),
               _vm._v(" "),
               _c("div", { staticClass: "desc" }, [
-                _c("input", {
-                  staticClass: "form-control",
-                  attrs: {
-                    type: "number",
-                    id: "quantity_product_" + product.id
-                  },
-                  domProps: { value: 1 }
-                }),
-                _vm._v(" "),
-                _c(
-                  "button",
-                  {
-                    staticClass: "btn btn-success btn-block",
-                    on: {
-                      click: function($event) {
-                        return _vm.addCart(product.id)
-                      }
-                    }
-                  },
-                  [
-                    _vm._v(
-                      "\n                        Add to Cart\n                    "
-                    )
-                  ]
-                ),
-                _vm._v(" "),
-                _c("a", { attrs: { href: "/shop/product/" + product.slug } }, [
-                  _vm._v(
-                    "\n                        See details\n                    "
-                  )
+                _c("div", { staticClass: "row" }, [
+                  _c("div", { staticClass: "col col-sm" }, [
+                    _c("h5", [
+                      _c(
+                        "a",
+                        { attrs: { href: "/shop/product/" + product.slug } },
+                        [
+                          _vm._v(
+                            "\n                                    See details\n                                "
+                          )
+                        ]
+                      )
+                    ])
+                  ]),
+                  _vm._v(" "),
+                  _c("div", { staticClass: "col col-sm text-right" }, [
+                    _c("h5", [
+                      _c(
+                        "span",
+                        { staticClass: "price badge badge-success text-white" },
+                        [
+                          _vm._v(
+                            "    $ " +
+                              _vm._s(product.price) +
+                              "\n                                "
+                          )
+                        ]
+                      )
+                    ])
+                  ])
                 ]),
                 _vm._v(" "),
                 _c("br"),
                 _vm._v(" "),
-                _c("span", { staticClass: "price" }, [
-                  _vm._v(" $ " + _vm._s(product.price))
+                _c("div", { staticClass: "row" }, [
+                  _c("div", { staticClass: "col col-sm" }, [
+                    _c("input", {
+                      staticClass: "form-control",
+                      attrs: {
+                        type: "number",
+                        id: "quantity_product_" + product.id
+                      },
+                      domProps: { value: 1 }
+                    })
+                  ]),
+                  _vm._v(" "),
+                  _c("div", { staticClass: "col col-sm" }, [
+                    _c(
+                      "button",
+                      {
+                        staticClass: "btn btn-success btn-block",
+                        on: {
+                          click: function($event) {
+                            return _vm.addCart(product.id)
+                          }
+                        }
+                      },
+                      [
+                        _vm._v(
+                          "\n                                Add to Cart\n                            "
+                        )
+                      ]
+                    )
+                  ])
                 ])
               ])
             ])
@@ -54536,8 +54581,8 @@ __webpack_require__.r(__webpack_exports__);
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
-__webpack_require__(/*! C:\xampp\htdocs\proyectos\ejemplos\laravel\tienda_linea\tienda\resources\js\app.js */"./resources/js/app.js");
-module.exports = __webpack_require__(/*! C:\xampp\htdocs\proyectos\ejemplos\laravel\tienda_linea\tienda\resources\sass\app.scss */"./resources/sass/app.scss");
+__webpack_require__(/*! C:\xampp\htdocs\proyectos\ejemplos\laravel\fullstack-test\resources\js\app.js */"./resources/js/app.js");
+module.exports = __webpack_require__(/*! C:\xampp\htdocs\proyectos\ejemplos\laravel\fullstack-test\resources\sass\app.scss */"./resources/sass/app.scss");
 
 
 /***/ })

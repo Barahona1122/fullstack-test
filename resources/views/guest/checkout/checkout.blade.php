@@ -1,5 +1,7 @@
 @extends('guest.layout.app')
 
 @section('content')
-    <checkout-component></checkout-component>
+	<div id="app">
+		<checkout-component></checkout-component>
+	</div>
 @endsection

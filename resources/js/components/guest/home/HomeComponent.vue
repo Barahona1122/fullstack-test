@@ -10,16 +10,33 @@
                     <div class="product-grid" :style="'background-image:url('+product.url+');height: 250px;'">
                     </div>
                     <div class="desc">
-                        <input type="number" class="form-control" :id="'quantity_product_'+product.id" :value="1">
-                        <button class="btn btn-success btn-block" @click="addCart(product.id)">
-                            Add to Cart
-                        </button>
-
-                        <a :href="'/shop/product/'+product.slug">
-                            See details
-                        </a>
+                        <div class="row">
+                            <div class="col col-sm">
+                                <h5>
+                                    <a :href="'/shop/product/'+product.slug">
+                                        See details
+                                    </a>
+                                </h5>
+                            </div>
+                            <div class="col col-sm text-right">
+                                <h5>
+                                    <span class="price badge badge-success text-white">    $ {{ product.price}}
+                                    </span>
+                                </h5>
+                            </div>
+                        </div>
                         <br>
-                        <span class="price"> $ {{ product.price}}</span>
+
+                        <div class="row">
+                            <div class="col col-sm">
+                                <input type="number" class="form-control" :id="'quantity_product_'+product.id" :value="1">
+                            </div>
+                            <div class="col col-sm">
+                                <button class="btn btn-success btn-block" @click="addCart(product.id)">
+                                    Add to Cart
+                                </button>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
