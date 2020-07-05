@@ -11,15 +11,31 @@
                         <div class="inner" style="height: 250px;">
                         </div>
                     </div>
-                    <h3>{{ name }}</h3>
-                    <p>$ {{ price }}</p>
+                    <div class="row">
+                        <div class="col col-sm">
+                            <h3>{{ name }}</h3>
+                        </div>
+                        <div class="col col-sm text-right">
+                            <h5>
+                                <span class="price badge badge-success text-white">
+                                    $ {{ price}}
+                                </span>
+                            </h5>
+                        </div>
+                    </div>
                     <p>
                         {{description}}
                     </p>
-                    <input type="number" v-model="quantity" class="form-control" placeholder="Quantity">
-                    <button class="btn btn-success btn-block" @click="addCart()">
-                        Add to Cart
-                    </button>
+                    <div class="row">
+                        <div class="col col-sm">
+                            <input type="number" v-model="quantity" class="form-control" placeholder="Quantity">
+                        </div>
+                        <div class="col col-sm">
+                            <button class="btn btn-success btn-block" @click="addCart()">
+                                Add to Cart
+                            </button>
+                        </div>
+                    </div>
                 </div>
             </div>
 
